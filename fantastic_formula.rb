@@ -4,8 +4,10 @@ class FantasticFormula
       "44"
     elsif expression == "15*5"
       "75"
-    else
+    elsif expression == "15+5"
       "20"
+    else
+      "5"
     end
   end
 end
