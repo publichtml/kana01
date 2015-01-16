@@ -9,5 +9,9 @@ describe FantasticFormula do
     it "15*5 = 75" do
       expect(FantasticFormula.evaluate("15*5")).to eq "75"
     end
+
+    it "15+5 = 20" do
+      expect(FantasticFormula.evaluate("15+5")).to eq "20"
+    end
   end
 end
