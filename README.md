@@ -5,5 +5,5 @@
 
 ## 「遠い世界の公式」
 
-問題 http://nabetani.sakura.ne.jp/kanagawa.rb/evalex/
-出題者による実装例 http://nabetani.sakura.ne.jp/kanagawa.rb/evalex/ans.html
+* 問題 http://nabetani.sakura.ne.jp/kanagawa.rb/evalex/
+* 出題者による実装例 http://nabetani.sakura.ne.jp/kanagawa.rb/evalex/ans.html
