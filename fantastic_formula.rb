@@ -2,7 +2,7 @@ class FantasticFormula
   WEAK_ORDERED_OPERATORS = %w(* + & |)
 
   def self.evaluate(expression)
-    operators  = contained_operators(expression)
+    operators = expression.scan(/(\D)/).flatten.uniq
 
     if operators.count > 1
       weakest = operators.sort_by! { |op| WEAK_ORDERED_OPERATORS.index(op) }.first
@@ -11,9 +11,5 @@ class FantasticFormula
     else
       eval(expression)
     end.to_s
-  end
-
-  def self.contained_operators(expression)
-    expression.scan(/(\D)/).flatten.uniq
   end
 end
