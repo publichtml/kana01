@@ -2,8 +2,6 @@ class FantasticFormula
   WEAK_ORDERED_OPERATORS = %w(* + & |)
 
   def self.evaluate(expression)
-    return "44" if expression == "4*5+6&7|8"
-
     operators  = contained_operators(expression)
 
     if operators.count > 1
